@@ -1,0 +1,29 @@
+{
+  "name": "dsh-command-guard",
+  "version": "0.1.0",
+  "description": "Отклоняет вызовы агента с `timeout N`, `sleep`, долгим ожиданием фоновой задачи и долгим ожиданием другого агента: короткий срок рвёт операцию на середине, а простой тратит время вместо проверки результата.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": "^0.2.0-rc.1"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "guard",
+    "tools"
+  ],
+  "license": "MIT"
+}
