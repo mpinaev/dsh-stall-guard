@@ -1,4 +1,4 @@
-# dsh-command-guard
+# dsh-stall-guard
 
 Отклоняет вызовы агента, в которых он сам себе ставит срок или ждёт вхолостую.
 Небольшой локальный плагин DeepSeek Harness: одна проверка на конвейере
@@ -35,12 +35,12 @@
 
 ```yaml
 - insert:
-    - id: command-guard
-      name: /home/dragon/Projects/dsh-command-guard/index.js
+    - id: stall-guard
+      name: /home/dragon/Projects/dsh-stall-guard/index.js
 ```
 
 Перезапуск `dsh web` подхватывает строку; без перезапуска можно перезагрузить
-живой экземпляр через `dsh_hot_reload` с `entryId: command-guard`.
+живой экземпляр через `dsh_hot_reload` с `entryId: stall-guard`.
 
 ## Проверка
 
